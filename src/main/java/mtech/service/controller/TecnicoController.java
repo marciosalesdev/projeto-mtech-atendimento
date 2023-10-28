@@ -6,6 +6,7 @@ import mtech.service.datasource.model.Tecnico;
 import mtech.service.repository.TecnicoRepository;
 import org.hibernate.mapping.Value;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,8 +21,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api")
 public class TecnicoController {
-
-    @Autowired
+@Autowired
     private TecnicoRepository tecnicoRepository;
     private Tecnico tecnico;
 
